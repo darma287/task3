@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darma - Web Developer</title>
+    <link href="css/global.css" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 animate-fadeInUp">
+    <header class="flex justify-between items-center px-6 py-4 bg-white">
+        <div class="text-2xl font-semibold">Darma's Logo</div>
+        <nav class="flex gap-4">
+            <a href="#" class="hover:text-blue-500">Home</a>
+            <a href="https://linkedin.com/in/darmaparamarta" class="hover:text-blue-500">About</a>
+            <a href="https://drive.google.com/file/d/1m6LaM9OtLCGzOyEuLBtl6oW7uiBEfp2N/view" class="hover:text-blue-500">Resume</a>
+        </nav>
+    </header>
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto my-10">
+        <div class="md:col-span-1 p-4 rounded-md">
+            <h1>Looking for help with your website?</h1>
+        </div>
+        <div class="md:col-span-2 grid grid-rows-2 gap-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-indigo-50 p-4 rounded-md">
+                    <h3>3+ years of experience</h3>
+                    <p>Hi, I'm Darma. I can help you build your first website!</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-md">
+                    <h3>Check out our Work</h3>
+                    <p><a href="https://darmaparamarta.com" class="text-blue-500" target="_blank">darmaparamarta.com</a></p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-indigo-50 p-4 rounded-md">
+                    <h3>See all my credentials</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="https://www.instagram.com/darma__p/" class="text-blue-500">Instagram</a>
+                        <a href="https://twitter.com/darma_uiux" class="text-blue-500">Twitter</a>
+                        <a href="https://medium.com/@darma__p" class="text-blue-500">Medium</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-md">
+                    <h3>Have a say? Drop it</h3>
+                    <input type="message" placeholder="Your message" class="p-3 border rounded-md focus:outline-none focus:border-blue-500">
+                    <button id= "confettiBtn" class="bg-blue-500 text-white py-1 px-2 rounded-md text-sm hover:bg-blue-600 focus:outline-none focus:bg-blue-600 my-4">Send message</button>
+                </div>
+            </div>
+        </div>   
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
